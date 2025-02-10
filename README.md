@@ -18,7 +18,7 @@ php artisan db:seed
 
 ## 網站設定
 - 網站設定列表
-  - GET /api/v1/settings
+  - GET /api/v1/setting
   - 回傳
     ```json
     {
