@@ -24,11 +24,9 @@ class AboutController extends Controller
 
     public function show($id)
     {
-        $response = Http::get("{$this->apiBaseUrl}/post-categories/1/posts");
-        $posts = $response->successful() ? ($response->json()['data']['posts'] ?? []) : [];
-
-        $post = collect($posts)->firstWhere('id', $id);
-
-        return view('about.show', compact('post'));
+        $response = Http::get("{$this->apiBaseUrl}/posts/{$id}");
+        $post = $response->successful() ? ($response->json()['data'] ?? null) : null;
+        
+        return view('about', compact('post'));
     }
 }
