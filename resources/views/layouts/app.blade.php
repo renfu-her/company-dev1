@@ -24,7 +24,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f6f6f6">
-    <link rel="shortcut icon" href="{{ asset('storage/' . ($setting['site_favicon'] ?? '')) }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ $setting['site_favicon'] }}" type="image/x-icon">
 
     <link rel="apple-touch-icon" sizes="57x57"
         href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-57x57.png') }}">
@@ -65,7 +65,7 @@
         content="https://www.roborobo.com.tw/images/layout06-3/common/app_icon/widetile.png">
     <meta name="msapplication-square310x310logo"
         content="https://www.roborobo.com.tw/images/layout06-3/common/app_icon/largetile.png">
-        
+
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/minimalist-basic/content.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/ionicons/css/ionicons.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/normalize.css') }}">

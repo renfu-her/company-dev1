@@ -2,10 +2,11 @@
     <div class="container">
         <div class="site-title">
             <a href="{{ url('/') }}" class="logo ibtn" itemprop="url"
-                style="background-image: url('{{ asset('storage/' . ($setting['site_logo'] ?? '')) }}')">
+                style="background-image: url('{{ $setting['site_logo'] }}')">
                 <h1 itemprop="headline">{{ $setting['site_name'] ?? '台灣樂博樂博機器人教育' }}</h1>
             </a>
         </div>
+
         <div class="top-nav">
             <div class="search-box">
                 <label for="PdSearch">
