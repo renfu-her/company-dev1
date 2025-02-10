@@ -6,25 +6,25 @@
     <link rel="alternate" hreflang="x-default" href="index.htm">
     <link rel="alternate" hreflang="zh" href="index.htm">
     <link rel="alternate" hreflang="zh-TW" href="index.htm">
-    <meta name="copyright" content="台灣樂博樂博機器人教育">
-    <title>台灣樂博樂博機器人教育</title>
-    <meta name="description" content="台灣樂博樂博機器人 專門為您提供各系列的機器人教育產品，從研究開發、生產製造、執行教育的專業公司，課程涵蓋學齡前兒童到大學生一應俱全!">
-    <meta name="keywords" content="張新城,樂博樂博, ROBOROBO,機器人,ROBOT,營隊,冬令營, 機器人競賽,大瀚教育,STEAM,教育, 創新科技教育,師資培訓,IPRC">
+    <meta name="copyright" content="{{ $setting['site_name'] ?? '台灣樂博樂博機器人教育' }}">
+    <title>{{ $setting['site_name'] ?? '台灣樂博樂博機器人教育' }}</title>
+    <meta name="description" content="{{ $setting['seo_description'] }}">
+    <meta name="keywords" content="{{ $setting['seo_keywords'] }}">
     <link rel="canonical" href="index.htm">
     <meta property="og:url" content="https://www.roborobo.com.tw/">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="台灣樂博樂博機器人教育">
-    <meta property="og:title" content="台灣樂博樂博機器人教育">
-    <meta name="twitter:title" content="台灣樂博樂博機器人教育">
-    <meta property="og:description" content="台灣樂博樂博機器人 專門為您提供各系列的機器人教育產品，從研究開發、生產製造、執行教育的專業公司，課程涵蓋學齡前兒童到大學生一應俱全!">
-    <meta name="twitter:description" content="台灣樂博樂博機器人 專門為您提供各系列的機器人教育產品，從研究開發、生產製造、執行教育的專業公司，課程涵蓋學齡前兒童到大學生一應俱全!">
+    <meta property="og:site_name" content="{{ $setting['site_name'] }}">
+    <meta property="og:title" content="{{ $setting['seo_title'] }}">
+    <meta name="twitter:title" content="{{ $setting['seo_title'] }}">
+    <meta property="og:description" content="{{ $setting['seo_description'] }}">
+    <meta name="twitter:description" content="{{ $setting['seo_description'] }}">
     <meta property="og:image" content="https://www.roborobo.com.tw/images/layout06-3/common/app_icon/largetile.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://www.roborobo.com.tw/images/layout06-3/common/app_icon/largetile.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f6f6f6">
-    <link rel="shortcut icon" href="{{ asset('images/layout06-3/common/app_icon/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('storage/' . ($setting['site_favicon'] ?? '')) }}" type="image/x-icon">
 
     <link rel="apple-touch-icon" sizes="57x57"
         href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-57x57.png') }}">
@@ -65,6 +65,7 @@
         content="https://www.roborobo.com.tw/images/layout06-3/common/app_icon/widetile.png">
     <meta name="msapplication-square310x310logo"
         content="https://www.roborobo.com.tw/images/layout06-3/common/app_icon/largetile.png">
+        
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/minimalist-basic/content.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/ionicons/css/ionicons.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/normalize.css') }}">
@@ -76,6 +77,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/common/layout06-3/_editor_style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('8800/css/common/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/common/layout06-3/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
     <script defer="" src="{{ asset('js/modernizr.js') }}"></script>
 

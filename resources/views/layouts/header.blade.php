@@ -1,8 +1,9 @@
 <header id='header' class="site-header" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
     <div class="container">
         <div class="site-title">
-            <a href="index.htm" class="logo ibtn" itemprop="url">
-                <h1 itemprop="headline">台灣樂博樂博機器人教育</h1>
+            <a href="{{ url('/') }}" class="logo ibtn" itemprop="url"
+                style="background-image: url('{{ asset('storage/' . ($setting['site_logo'] ?? '')) }}')">
+                <h1 itemprop="headline">{{ $setting['site_name'] ?? '台灣樂博樂博機器人教育' }}</h1>
             </a>
         </div>
         <div class="top-nav">
@@ -44,7 +45,6 @@
                                 <a itemprop="url"
                                     href="{{ route('competitions.show', $post['id']) }}">{{ $post['title'] }}</a>
                             </li>
-
                         @endforeach
                     </ul>
                 </li>
