@@ -15,6 +15,32 @@ php artisan db:seed
 - URL
   - admin-filament.dev-vue.com/api/v1/  
 
+
+## 網站設定
+- 網站設定列表
+  - GET /api/v1/settings
+  - 回傳
+    ```json
+    {
+      "data": {
+        "id": 1,
+        "site_name": "DEMO 網站",
+        "site_logo": "settings/01JKQ902K835179XK4HDPNMFJW.png",
+        "site_favicon": "settings/01JKQ902KAM63GQEP3JADG90CJ.png",
+        "seo_title": "DEMO 網站",
+        "seo_description": "DEMO 網站",
+        "seo_keywords": "DEMO 網站",
+        "contact_email": null,
+        "contact_phone": null,
+        "address": null,
+        "facebook_url": null,
+        "instagram_url": null,
+        "line_url": null,
+        "created_at": "2025-02-10T06:32:42.000000Z",
+        "updated_at": "2025-02-10T06:33:24.000000Z"
+      }
+    }
+    ```
 ## 相簿
 - 相簿列表
   - GET /api/v1/albums
