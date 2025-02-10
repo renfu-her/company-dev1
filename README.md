@@ -179,15 +179,6 @@ php artisan db:seed
         {
           "id": 1,
           "title": "U--ARO 初階課程 (幼兒)",
-          "subtitle": "UARO 編碼機器人是專為學齡前兒童設計的編碼機器人\n30分鐘的全神貫注孩子可以打造並驅動他想要的機器人",
-          "image_url": "https://admin-filament.dev-vue.com/storage/courses/0194eae1-ded0-7132-818b-dd29a6229e53.webp",
-          "content": "HTML 內容",
-          "is_new": false,
-          "meta": {
-            "title": null,
-            "description": null,
-            "keywords": null
-          },
           "created_at": "2025-02-09 21:24:19"
         }
       ]

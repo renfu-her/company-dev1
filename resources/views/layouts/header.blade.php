@@ -21,34 +21,53 @@
         </div>
         <nav class="site-nav" role="navigation" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
             <ul class="menu list-h dropdown-menu">
-                <li itemprop="name" class="hover-on "><a itemprop="url" href="about/1.html">關於我們</a>
+                <li itemprop="name" class="hover-on">
+                    <a itemprop="url" href="{{ route('about') }}">關於我們</a>
                     <ul>
-                        <li itemprop="name"><a itemprop="url" href="about/1.html">關於我們</a></li>
-                        <li itemprop="name"><a itemprop="url" href="about/2.html">教學理念</a></li>
+                        @foreach ($aboutPosts as $post)
+                            <li itemprop="name">
+                                <a itemprop="url" href="{{ route('about.show', $post['id']) }}">{{ $post['title'] }}</a>
+                            </li>
+                        @endforeach
                     </ul>
                 </li>
-                <li itemprop="name" class="hover-on full_menu"><a itemprop="url" href="products/all/1.html">教育課程</a>
+
+                <li itemprop="name" class="hover-on">
+                    <a itemprop="url" href="{{ route('courses') }}">教育課程</a>
                 </li>
-                <li itemprop="name" class="hover-on "><a itemprop="url" href="autopage/2/6.html">國際競賽</a>
+
+                <li itemprop="name" class="hover-on">
+                    <a itemprop="url" href="{{ route('competitions') }}">國際競賽</a>
                     <ul>
-                        <li itemprop="name" class=""><a itemprop="url" href="autopage/2/6.html">IPRC國際機器人大賽沿革</a>
-                        </li>
-                        <li itemprop="name" class=""><a itemprop="url" href="autopage/2/7.html">台灣IPRC國際機器人大賽</a>
-                        </li>
-                        <li itemprop="name" class=""><a itemprop="url" href="autopage/2/8.html">首爾IPRC機器人國際大賽</a>
-                        </li>
-                        <li itemprop="name" class=""><a itemprop="url" href="autopage/2/9.html">澳洲 WIT
-                                機器人國際大賽</a></li>
+                        @foreach ($competitionPosts as $post)
+                            <li itemprop="name">
+                                <a itemprop="url"
+                                    href="{{ route('competitions.show', $post['id']) }}">{{ $post['title'] }}</a>
+                            </li>
+
+                        @endforeach
                     </ul>
                 </li>
-                <li itemprop="name" class="hover-on "><a itemprop="url" href="service/2.html">合作項目</a>
+
+                <li itemprop="name" class="hover-on">
+                    <a itemprop="url" href="{{ route('cooperation') }}">合作項目</a>
                     <ul>
-                        <li itemprop="name"><a itemprop="url" href="service/2.html">教育合作</a></li>
-                        <li itemprop="name"><a itemprop="url" href="service/1.html">師資培訓</a></li>
+                        @foreach ($cooperationPosts as $post)
+                            <li itemprop="name">
+                                <a itemprop="url"
+                                    href="{{ route('cooperation.show', $post['id']) }}">{{ $post['title'] }}</a>
+                            </li>
+                        @endforeach
+
                     </ul>
                 </li>
-                <li itemprop="name" class="hover-on "><a itemprop="url" href="news/all/1.html">最新消息</a></li>
-                <li itemprop="name" class="hover-on "><a itemprop="url" href="album/all/1.html">精彩相簿</a>
+
+                <li itemprop="name" class="hover-on">
+                    <a itemprop="url" href="{{ route('news') }}">最新消息</a>
+                </li>
+
+                <li itemprop="name" class="hover-on">
+                    <a itemprop="url" href="{{ route('albums') }}">精彩相簿</a>
                 </li>
                 <li itemprop="name" class="hover-on "><a itemprop="url" href="contact/8.html">聯絡我們</a></li>
                 <li itemprop="name" class="hover-on "><a itemprop="url" href="autopage/3/13.html">下載專區</a>
