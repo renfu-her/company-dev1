@@ -3,9 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="alternate" hreflang="x-default" href="index.htm">
-    <link rel="alternate" hreflang="zh" href="index.htm">
-    <link rel="alternate" hreflang="zh-TW" href="index.htm">
     <meta name="copyright" content="{{ $setting['site_name'] ?? '台灣樂博樂博機器人教育' }}">
     <title>{{ $setting['site_name'] ?? '台灣樂博樂博機器人教育' }}</title>
     <meta name="description" content="{{ $setting['seo_description'] }}">
@@ -24,38 +21,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f6f6f6">
-    <link rel="shortcut icon" href="{{ $setting['site_favicon'] }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ $setting['site_favicon'] }}" type="image/png">
 
-    <link rel="apple-touch-icon" sizes="57x57"
-        href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-57x57.png') }}">
+    <link rel="icon" type="image/png" href="{{ $setting['site_favicon'] }}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ $setting['site_favicon'] }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ $setting['site_favicon'] }}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{ $setting['site_favicon'] }}" sizes="192x192">
+    <link rel="icon" type="image/png" href="{{ $setting['site_favicon'] }}" sizes="192x192">
 
-    <link rel="apple-touch-icon" sizes="60x60"
-        href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-60x60.png') }}">
-
-    <link rel="apple-touch-icon" sizes="72x72"
-        href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-72x72.png') }}">
-
-    <link rel="apple-touch-icon" sizes="76x76"
-        href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-76x76.png') }}">
-
-    <link rel="apple-touch-icon" sizes="114x114"
-        href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-114x114.png') }}">
-    <link rel="apple-touch-icon" sizes="120x120"
-        href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-120x120.png') }}">
-    <link rel="apple-touch-icon" sizes="144x144"
-        href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-144x144.png') }}">
-    <link rel="apple-touch-icon" sizes="152x152"
-        href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-152x152.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="{{ asset('images/layout06-3/common/app_icon/apple-touch-icon-180x180.png') }}">
-    <link rel="icon" type="image/png" href="{{ asset('images/layout06-3/common/app_icon/favicon-16x16.png') }}"
-        sizes="16x16">
-    <link rel="icon" type="image/png" href="{{ asset('images/layout06-3/common/app_icon/favicon-32x32.png') }}"
-        sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ asset('images/layout06-3/common/app_icon/favicon-96x96.png') }}"
-        sizes="96x96">
-    <link rel="icon" type="image/png"
-        href="{{ asset('images/layout06-3/common/app_icon/android-chrome-192x192.png') }}" sizes="192x192">
 
     <meta name="msapplication-square70x70logo"
         content="https://www.roborobo.com.tw/images/layout06-3/common/app_icon/smalltile.png">
